@@ -10,6 +10,7 @@ import argparse
 import glob 
 import os 
 import pandas as pd 
+import mlflow
  
 from sklearn.linear_model import LogisticRegression 
 from sklearn.model_selection import train_test_split 
@@ -19,7 +20,7 @@ from mlflow.sklearn import autolog
 def main(args): 
 
     # enable autologging
-    autolog() 
+    mlflow.autolog() 
  
     # read data 
     df = get_csvs_df(args.training_data) 
