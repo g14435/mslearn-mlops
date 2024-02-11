@@ -1,3 +1,10 @@
+#The completed train.py script performs the following tasks: 
+#1. It reads in training data from a specified directory containing CSV files using the get_csvs_df function. 
+#2. It splits the data into training and testing sets using the split_data function. 
+#3. It trains a logistic regression model using the train_model function with a specified regularization rate. 
+#4. It enables auto logging with MLflow to automatically log parameters, metrics, and artifacts for the scikit-learn model. 
+#5. The script takes in two command-line arguments: –training_data, which specifies the path to the directory containing the training data, and –reg_rate, which specifies the regularization rate to use when training the logistic regression model. 
+
 # Import libraries 
 import argparse 
 import glob 
